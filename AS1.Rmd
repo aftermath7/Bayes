@@ -1,0 +1,16 @@
+---
+title: "BayesAS1"
+output: html_document
+---
+
+#First Assignment
+
+Linear regression using data "airquality"
+
+```{r}
+d = as.data.frame(airquality)
+attach(d)
+res = lm(Ozone~Wind,data=d)
+summary(res)
+
+```
